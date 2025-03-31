@@ -2,9 +2,6 @@ name: Approve and Merge PR
 
 on:
   pull_request:
-    types:
-      labeled:
-        - "auto-merge" #Trigger when label is added
 
 jobs:
   approve_and_merge:
