@@ -20,7 +20,7 @@ jobs:
         run: node check-lang-json.js
       - name: Approve PR
         run: |
-          curl -X PUT \
+          curl -X POST \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
